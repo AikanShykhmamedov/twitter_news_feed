@@ -10,8 +10,10 @@ dependencies:
   cached_network_image: ^3.2.3
   flutter:
     sdk: flutter
+  flutter_mobx: ^2.0.6+5
   flutter_svg: ^1.1.6
   freezed_annotation: ^2.2.0
+  get_it: ^7.2.0
   json_annotation: ^4.8.0
   twitter_api:
     path: packages/twitter_api
@@ -25,6 +27,7 @@ dev_dependencies:
     sdk: flutter
   freezed: ^2.3.2
   json_serializable: ^6.6.0
+  mobx_codegen: ^2.1.1
 
 flutter:
   uses-material-design: true

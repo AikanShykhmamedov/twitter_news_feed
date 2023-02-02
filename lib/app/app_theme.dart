@@ -6,6 +6,7 @@ final appTheme = ThemeData(
   appBarTheme: _appBarTheme,
   dividerTheme: _dividerTheme,
   textTheme: _textTheme,
+  progressIndicatorTheme: _progressIndicatorTheme,
 );
 
 const _colorScheme = ColorScheme(
@@ -64,4 +65,8 @@ const _textTheme = TextTheme(
     fontSize: 12,
     letterSpacing: 0.25,
   ),
+);
+
+final _progressIndicatorTheme = ProgressIndicatorThemeData(
+  circularTrackColor: _colorScheme.outline,
 );
