@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 final appTheme = ThemeData(
+  useMaterial3: true,
   scaffoldBackgroundColor: _colorScheme.surface,
   colorScheme: _colorScheme,
   appBarTheme: _appBarTheme,

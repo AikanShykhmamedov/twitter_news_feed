@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
 import 'package:twitter_api/twitter_api.dart';
 import 'package:twitter_news_feed/feed/feed.dart';
@@ -19,10 +20,15 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: appTheme,
-      home: const FeedScreen(),
+    return AnnotatedRegion<SystemUiOverlayStyle>(
+      value: SystemUiOverlayStyle(
+        systemNavigationBarColor: appTheme.colorScheme.surface,
+      ),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: appTheme,
+        home: const FeedScreen(),
+      ),
     );
   }
 }
